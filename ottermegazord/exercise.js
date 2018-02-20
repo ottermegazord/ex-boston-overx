@@ -20,7 +20,18 @@ exercise.findBiggerSalaries = function(){
     //
     //     Example: salaries larger than 300K is 8
     // ---------------------------------------------------
-
+    var threshSalary = Number(document.getElementById("salary").value);
+    var counter = 0;
+    var i;
+    for (i=0; i<=exercise.salaries.length; i++) {
+        var currentSalary = Number(exercise.salaries[i][18]);
+        if (currentSalary > threshSalary){
+            counter++;
+        }
+        // console.log(threshSalary);
+       
+    }
+    console.log(counter);
 };
 
 // filter function
