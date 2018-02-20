@@ -20,7 +20,6 @@ exercise.findBiggerSalaries = function(){
     //
     //     Example: salaries larger than 300K is 8
     // ---------------------------------------------------
-    var threshSalary = Number(document.getElementById("salary").value);
     var salaryList = [];
     salaryList = exercise.salaries.filter(exercise.largerSalary);
     return salaryList;
